@@ -20,16 +20,14 @@ install :
 		# Install Console Extend Plugin
 		composer create-project --repository='{"type": "vcs", "url": "git@github.com:dennisinteractive/drupal-console-extend.git", "vendor-alias": "drupal", "no-api": true}' drupal/console-extend:dev-master#041bb9cf9831d ~/.console/extend --no-dev --no-interaction
 
-		# Install Console Extend Plugin
-		composer create-project --repository='{"type": "vcs", "url": "git@github.com:dennisinteractive/drupal-console-extend.git", "vendor-alias": "drupal", "no-api": true}' drupal/console-extend:dev-master#041bb9cf9831d ~/.console/extend --no-dev --no-interaction
 		# Install Dennis console
 		# cd ~/.console/extend && composer require drupal/console:dev-master#368bbfa44dc6
 		git clone git@github.com:dennisinteractive/drupal_console_sites.git ~/.console/sites/
-		cd ~/.console/extend && composer require dennisdigital/drupal_console_commands:dev-master#d795ec65faf83
+		cd ~/.console/extend && composer require dennisdigital/drupal_console_commands:dev-master#aa1083982c19
 		cd ~/.console/extend && composer update
-		cp /home/vagrant/.console/extend/vendor/dennisdigital/drupal_console_commands/chain/*.yml ~/.console/chain
-		cp /home/vagrant/.console/extend/vendor/drupal/console/extend.console.services.yml ~/.console/extend
-		cp /home/vagrant/.console/extend/vendor/drupal/console/extend.console.uninstall.services.yml ~/.console/extend
+		cp ~/.console/extend/vendor/dennisdigital/drupal_console_commands/chain/*.yml ~/.console/chain
+		cp ~/.console/extend/vendor/drupal/console/extend.console.services.yml ~/.console/extend
+		cp ~/.console/extend/vendor/drupal/console/extend.console.uninstall.services.yml ~/.console/extend
 		drupal debug:site
 		drupal list site
 		echo Drupal Console Installed
