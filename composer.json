@@ -1,5 +1,5 @@
 {
-  "name": "dennisdigital/drupal_console_commands",
+  "name": "dennisdigital/drupal-console-commands",
   "description": "Custom commands for Drupal console.",
   "type": "drupal-console-library",
   "license": "GPL-2.0+",
@@ -20,7 +20,7 @@
       "symfony/filesystem": ">=2.7 <3.2",
       "dflydev/placeholder-resolver": "^1.0",
       "aws/aws-sdk-php": "^3.26",
-    "drupal/console": "~1.0"
+      "drupal/console": "~1.0"
   },
   "require-dev": {
       "drupal/console-core": "~1.0"
